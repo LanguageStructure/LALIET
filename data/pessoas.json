@@ -1,0 +1,17 @@
+{
+  "pessoas": [
+    {
+      "nome": "Dr. Fabrício Ferraz Gerardi",
+      "funcao": "Principal Investigator (PI)",
+      "foto": null,
+      "biografia": "Doutor em Linguística Geral e mestre em Linguística Computacional pela Universidade de Tübingen (Alemanha). Mestre em Língua Hebraica pela USP (Brasil) e bacharel em Letras Clássicas (grego antigo e latim) pelo PIAL/UNISAL (Roma, Itália)."
+    },
+    {
+      "nome": "Dra. Cristiane Poltronieri",
+      "funcao": "Pesquisadora",
+      "foto": null,
+      "biografia": null
+    }
+  ],
+  "colaboradores": []
+}
