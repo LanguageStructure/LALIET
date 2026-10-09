@@ -1,0 +1,17 @@
+{
+  "instrucoes": "Adicionar um objeto por imagem; não publicar sem verificar permissão e créditos.",
+  "imagens": [
+    {
+      "id": "registro-001",
+      "arquivo": "imagens/registro-001.jpg",
+      "titulo": "",
+      "descricao": "",
+      "texto_alternativo": "",
+      "autoria": "",
+      "data": "",
+      "local": "",
+      "creditos": "",
+      "autorizacao_confirmada": false
+    }
+  ]
+}
