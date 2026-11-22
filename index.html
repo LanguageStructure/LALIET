@@ -1,13 +1,223 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123b86"><meta name="description" content="LALIET — Laboratório de Línguas Indígenas, Educação e Tecnologia, projeto de pesquisa da UNIFACC Mato Grosso."><title>LALIET — Línguas, Educação e Tecnologia</title><style>
-:root{--ink:#173c7a;--muted:#536c94;--cream:#ffffff;--accent:#ff9018;--green:#128b61;--line:#dbe4f4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #ed7e0c;outline-offset:4px}.wrap{max-width:1240px;margin:auto;padding:0 34px}.nav{position:sticky;top:0;z-index:20;background:#fffffff0;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}.unifacc-brand{display:flex;align-items:center;flex:0 0 auto;margin-left:auto}.unifacc-brand img{display:block;width:clamp(130px,15vw,200px);height:auto}.wordmark{font-weight:800;font-size:1.7rem;letter-spacing:-.08em}.navlinks{display:flex;gap:25px;align-items:center;font-size:.86rem;font-weight:600}.navlinks a:hover,.textlink:hover{opacity:.6}.pill{border:1px solid #91a6c8;padding:10px 16px;border-radius:30px}.hero{background:#123b86;color:#ffffff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:700px;height:700px;border:1px solid #ffffff20;border-radius:50%;right:-220px;top:-200px;box-shadow:0 0 0 90px #ffffff05,0 0 0 180px #ffffff04;pointer-events:none}.hero .wrap{padding-top:120px;padding-bottom:110px;position:relative;z-index:1}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;font-weight:750}.hero .eyebrow{color:var(--accent)}h1{font-size:clamp(4.5rem,11vw,10.5rem);line-height:.9;letter-spacing:-.095em;margin:28px 0 32px;font-weight:780}.hero h1 .hero-linguas{color:#fff}.hero h1 .hero-educacao{color:#ff9018}.hero h1 .hero-tecnologia{color:#35c48b}.herogrid{display:grid;grid-template-columns:1.3fr .7fr;gap:70px;align-items:end}.lead{font-size:clamp(1.3rem,2.4vw,2.15rem);line-height:1.35;letter-spacing:-.04em;max-width:730px}.heroaside{border-left:1px solid #ffffff50;padding-left:25px;color:#e3eaff;line-height:1.8;font-size:.95rem}.actions{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}.btn{display:inline-block;padding:16px 23px;border-radius:100px;background:var(--accent);color:#173c7a;font-weight:750;font-size:.9rem}.btn.secondary{background:transparent;border:1px solid #91a6c8;color:white}.section{padding:105px 0;border-bottom:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.section h2{font-size:clamp(2.6rem,5vw,5rem);line-height:1.04;letter-spacing:-.07em;margin:12px 0}.intro{max-width:690px;font-size:1.2rem;line-height:1.7;color:var(--muted)}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project{background:white;min-height:410px;padding:36px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,box-shadow .2s}.project{border-top:4px solid var(--green)}.project:hover{transform:translateY(-5px);box-shadow:0 20px 50px #17478f15}.project .num{font-size:.8rem;color:#536c94;letter-spacing:.15em}.project h3{font-size:clamp(2.6rem,5vw,4.7rem);letter-spacing:-.075em;line-height:1;margin:25px 0 12px}.project p{color:var(--muted);line-height:1.7;max-width:390px}.arrow{font-size:2rem}.dark{background:#173c7a;color:#ffffff}.dark .intro,.dark .subtle{color:#cad8ec}.research{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:55px}.research article{border-top:3px solid #25b681;padding-top:25px}.research h3{font-size:1.5rem;letter-spacing:-.04em}.research p{line-height:1.7;color:#cad8ec}.people{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.person{background:#fff;padding:34px;border:1px solid var(--line)}.avatar{height:180px;background:linear-gradient(135deg,#e3ebf8,#f7f9ff);display:flex;align-items:center;justify-content:center;color:#8498b9;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px}.person h3{font-size:1.65rem;letter-spacing:-.04em;margin:0 0 8px}.person small{font-weight:750;color:#47628b}.person p{color:var(--muted);line-height:1.75}.textlink{font-size:.85rem;font-weight:750;border-bottom:1px solid;padding-bottom:5px}.pub{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:center;border-top:1px solid var(--line);padding:28px 0}.pub:last-child{border-bottom:1px solid var(--line)}.pub strong{font-size:1.1rem;line-height:1.5}.pub span{color:var(--muted)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery figure{margin:0;background:#fff;border:1px solid var(--line)}.placeholder{aspect-ratio:4/3;background:linear-gradient(135deg,#e3ebf8,#f1f5fc);display:grid;place-items:center;color:#536c94;font-size:.85rem}.gallery figcaption{padding:20px;line-height:1.6;font-size:.9rem;color:var(--muted)}.foot{background:#123b86;color:#eef3fc;padding:65px 0}.footgrid{display:flex;justify-content:space-between;gap:30px}.foot .wordmark{font-size:3rem}.foot p{color:#cad8ec;line-height:1.7}.foot a{text-decoration:underline;text-underline-offset:4px}.tag{display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#536c94}.note{background:#eef8f3;padding:22px 26px;border-left:3px solid var(--green);line-height:1.7;color:#536c94}@media(max-width:800px){.navlinks{gap:12px;overflow-x:auto;white-space:nowrap}.unifacc-brand{margin-left:0}.nav .wrap{flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.hero .wrap{padding-top:85px;padding-bottom:90px}.herogrid,.grid2,.people,.research,.gallery{grid-template-columns:1fr}.heroaside{margin-top:15px}.section{padding:70px 0}.pub{grid-template-columns:1fr;gap:8px}.footgrid{display:block}.wrap{padding:0 22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
-</style><link rel="stylesheet" href="assets/gallery.css"><script src="assets/gallery.js" defer></script><script src="assets/people.js" defer></script></head><body>
-<header class="nav"><div class="wrap"><a class="wordmark" href="#inicio" aria-label="LALIET início">LALIET<span style="color:#128b61">.</span></a><nav class="navlinks" aria-label="Navegação principal"><a href="sobre.html">Sobre</a><a href="#pesquisa">Pesquisa</a><a href="#projetos">Projetos</a><a href="#pessoas">Pessoas</a><a href="#publicacoes">Publicações</a><a href="#imagens">Imagens</a></nav><a class="unifacc-brand" href="https://unifacc.com.br/" aria-label="UNIFACC-MT — site institucional"><img src="assets/unifacc-logo.png" alt="UNIFACC-MT — A Faculdade Católica de Mato Grosso" onerror="this.parentElement.style.display='none'"></a></div></header>
-<main><section class="hero" id="inicio"><div class="wrap"><div class="eyebrow">UNIFACC Mato Grosso · Pesquisa interdisciplinar</div><h1><span class="hero-linguas">Línguas.</span><br><span class="hero-educacao">Educação.</span><br><span class="hero-tecnologia">Tecnologia.</span></h1><div class="herogrid"><div><p class="lead">Investigamos línguas indígenas e desenvolvemos recursos para sua documentação, pesquisa e presença no mundo digital.</p><div class="actions"><a class="btn" href="#projetos">Explorar projetos ↗</a><a class="btn secondary" href="sobre.html">Conhecer o laboratório</a></div></div><div class="heroaside">LALIET<br>Laboratório de Línguas Indígenas, Educação e Tecnologia<br><br>Um projeto de pesquisa da UNIFACC Mato Grosso.</div></div></div></section>
-<section class="section" id="sobre"><div class="wrap"><span class="eyebrow">01 / O laboratório</span><div class="sectionhead"><h2>Pesquisa que conecta<br>línguas e futuros.</h2></div><p class="intro">O LALIET é um projeto de pesquisa da UNIFACC Mato Grosso dedicado ao estudo de línguas indígenas, à documentação linguística, à educação e ao desenvolvimento de tecnologias digitais. Sua atuação é interdisciplinar e aberta à colaboração com pesquisadores, instituições e comunidades.</p></div></section>
-<section class="section dark" id="pesquisa"><div class="wrap"><span class="eyebrow" style="color:#ff9018">02 / Linhas de atuação</span><h2>Conhecimento<br>em movimento.</h2><div class="research"><article><span class="tag" style="color:#ff9018">I</span><h3>Documentação linguística</h3><p>Organização, preservação e análise de dados linguísticos, com atenção à proveniência e ao contexto dos materiais.</p></article><article><span class="tag" style="color:#ff9018">II</span><h3>Educação e línguas indígenas</h3><p>Investigação e desenvolvimento de recursos que apoiem o ensino, a aprendizagem e a circulação do conhecimento.</p></article><article><span class="tag" style="color:#ff9018">III</span><h3>Tecnologia da linguagem</h3><p>Corpora digitais, ferramentas de busca, anotação linguística e aplicações computacionais para línguas indígenas.</p></article></div></div></section>
-<section class="section" id="projetos"><div class="wrap"><span class="eyebrow">03 / Projetos</span><div class="sectionhead"><h2>Projetos em<br>destaque.</h2><p class="intro">Iniciativas de pesquisa e infraestrutura digital vinculadas ao trabalho do laboratório.</p></div><div class="grid2"><a class="project" href="projetos/corbo.html"><div><span class="num">PROJETO 001 / BORORO</span><h3>CorBo</h3><p>Corpus Bororo. Recursos textuais, dados linguísticos e ferramentas para pesquisa e exploração de materiais em língua bororo.</p></div><span class="arrow" aria-hidden="true">↗</span></a><a class="project" href="projetos/xavcor.html"><div><span class="num">PROJETO 002 / XAVANTE</span><h3>XavCor</h3><p>Corpus Xavante. Organização e disponibilização de materiais textuais para documentação, pesquisa e futuras anotações linguísticas.</p></div><span class="arrow" aria-hidden="true">↗</span></a></div></div></section>
-<section class="section" id="pessoas"><div class="wrap"><span class="eyebrow">04 / Equipe e rede</span><div class="sectionhead"><h2>As pessoas<br>do LALIET.</h2></div><div id="people-list" class="people" aria-live="polite"><p class="intro">Carregando perfis da equipe…</p></div><p class="note" style="margin-top:22px">O laboratório reúne pesquisadores e poderá receber membros e colaboradores externos. Novos perfis serão publicados progressivamente.</p></div></section>
-<section class="section" id="publicacoes"><div class="wrap"><span class="eyebrow">05 / Produção científica</span><h2>Publicações<br>selecionadas.</h2><div class="pub"><span>2026</span><strong>CorBo v0.9.0 — Corpus da Língua Bororo<br><span>Corpus digital anotado, com recursos de consulta linguística e tokenizador. DOI: 10.5281/zenodo.23441622.</span></strong><span class="pub-links"><a class="textlink" href="https://doi.org/10.5281/zenodo.23441622" target="_blank" rel="noopener noreferrer">DOI ↗</a> · <a class="textlink" href="https://languagestructure.github.io/Bororo-Corpus/" target="_blank" rel="noopener noreferrer">Site do corpus ↗</a></span></div><div class="pub"><span>2026</span><strong>Publicação em anais da IJCAI 2026<br><span>Contribuição relacionada à revitalização de línguas indígenas e inteligência artificial.</span></strong><a class="textlink" href="https://www.ijcai.org/proceedings/2026/824" target="_blank" rel="noopener noreferrer">Ver publicação ↗</a></div><div class="pub"><span>2026</span><strong>Capítulo publicado pela Springer<br><span>Referência bibliográfica completa a incorporar.</span></strong><a class="textlink" href="https://link.springer.com/chapter/10.1007/978-3-032-39904-5_23#citeas" target="_blank" rel="noopener noreferrer">Ver capítulo ↗</a></div></div></section>
-<section class="section" id="imagens"><div class="wrap"><span class="eyebrow">06 / Acervo visual</span><div class="sectionhead"><h2>Imagens &amp;<br>contextos.</h2><p class="intro">Registros de pesquisa, atividades, materiais e eventos. Cada imagem será acompanhada de descrição e créditos.</p></div><div id="gallery-list" class="gallery" aria-live="polite"><p class="intro">O acervo fotográfico será disponibilizado em breve.</p></div></div></section></main>
-<footer class="foot"><div class="wrap footgrid"><div><div class="wordmark">LALIET.</div><p>Laboratório de Línguas Indígenas, Educação e Tecnologia<br>Projeto de pesquisa · UNIFACC Mato Grosso</p></div><div><p><a href="https://github.com/LanguageStructure/LALIET" target="_blank" rel="noopener noreferrer">Repositório do projeto ↗</a></p><p>© 2026 LALIET</p></div></div></footer></body></html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b86">
+<title>LALIET — Laboratório de Línguas Indígenas, Educação e Tecnologia</title>
+<meta name="description" content="LALIET — Laboratório de Línguas Indígenas, Educação e Tecnologia, projeto de pesquisa da UNIFACC Mato Grosso. Corpora digitais, documentação linguística e recursos educacionais.">
+<meta property="og:title" content="LALIET — Línguas. Educação. Tecnologia.">
+<meta property="og:description" content="Projeto de pesquisa da UNIFACC Mato Grosso dedicado a línguas indígenas, documentação linguística, educação e tecnologia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://languagestructure.github.io/LALIET/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23123b86'/%3E%3Ctext x='13' y='46' font-family='Arial' font-weight='900' font-size='38' fill='%23fff'%3EL%3C/text%3E%3Ccircle cx='46' cy='42' r='6' fill='%2335c48b'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+<script src="assets/people.js" defer></script>
+<script src="assets/gallery.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="wordmark" href="#inicio" aria-label="LALIET — início">LALIET<i>.</i></a>
+    <nav class="navlinks" id="navlinks" aria-label="Navegação principal">
+      <a href="sobre.html">Sobre</a>
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#publicacoes">Publicações</a>
+      <a href="#imagens">Imagens</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-controls="navlinks" aria-expanded="false">Menu</button>
+    <a class="unifacc-brand" href="https://unifacc.com.br/" aria-label="UNIFACC-MT — site institucional"><img src="assets/unifacc-logo.png" alt="UNIFACC-MT — A Faculdade Católica de Mato Grosso" width="600" height="181" onerror="this.parentElement.style.display='none'"></a>
+  </div>
+</header>
+
+<main id="conteudo">
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow">UNIFACC Mato Grosso · Pesquisa interdisciplinar</span>
+    <h1><span class="l1">Línguas.</span><span class="l2">Educação.</span><span class="l3">Tecnologia.</span></h1>
+    <div class="herogrid">
+      <div>
+        <p class="lead">Investigamos línguas indígenas e desenvolvemos recursos para sua documentação, pesquisa, ensino e presença no mundo digital.</p>
+        <div class="actions">
+          <a class="btn" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
+          <a class="btn ghost" href="sobre.html">Conhecer o laboratório</a>
+        </div>
+      </div>
+      <a class="news" href="#publicacoes">
+        <span class="badge">Novo · 22/11/2026</span>
+        <strong>CorBo v0.10.0 publicado no Zenodo</strong>
+        <p>Nova versão do Corpus da Língua Bororo: validação do CoNLL-U, camadas gold e silver, tokenizador v5 e licença CC BY 4.0.</p>
+        <span class="go">Ver publicação →</span>
+      </a>
+    </div>
+    <div class="stats" aria-label="O laboratório em números">
+      <div><b>2</b><span>corpora digitais de línguas indígenas</span></div>
+      <div><b>12.020</b><span>unidades textuais no CorBo</span></div>
+      <div><b>79.521</b><span>tokens anotados em bororo</span></div>
+      <div><b>1.900</b><span>sentenças gold com anotação manual</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="section" id="sobre">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="eyebrow">01 · O laboratório</span>
+      <h2>Pesquisa que conecta línguas e futuros.</h2>
+      <p class="intro" style="margin-top:28px">O LALIET é um projeto de pesquisa da UNIFACC Mato Grosso dedicado ao estudo de línguas indígenas, à documentação linguística, à educação e ao desenvolvimento de tecnologias digitais. Sua atuação é interdisciplinar e aberta à colaboração com pesquisadores, instituições e comunidades.</p>
+      <div class="actions"><a class="btn navy" href="sobre.html">Mais sobre o LALIET →</a></div>
+    </div>
+    <div class="principles reveal">
+      <div class="principle"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h3>Colaboração</h3><p>Trabalho conjunto com comunidades, instituições parceiras e pesquisadores.</p></div></div>
+      <div class="principle"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><h3>Responsabilidade com os dados</h3><p>Proveniência, direitos e autorizações respeitados em cada material publicado.</p></div></div>
+      <div class="principle"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><div><h3>Ciência aberta</h3><p>Corpora, ferramentas e dados versionados, citáveis e de acesso público.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PESQUISA ============ -->
+<section class="section dark" id="pesquisa">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div><span class="eyebrow">02 · Linhas de atuação</span><h2>Conhecimento em movimento.</h2></div>
+      <p class="intro">Três frentes que se alimentam mutuamente: do registro das línguas à sala de aula e às ferramentas computacionais.</p>
+    </div>
+    <div class="research">
+      <article class="reveal"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h5"/></svg></span><h3>Documentação linguística</h3><p>Organização, preservação e análise de dados linguísticos, com atenção à proveniência e ao contexto dos materiais.</p></article>
+      <article class="reveal"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><h3>Educação e línguas indígenas</h3><p>Investigação e desenvolvimento de recursos que apoiem o ensino, a aprendizagem e a circulação do conhecimento.</p></article>
+      <article class="reveal"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span><h3>Tecnologia da linguagem</h3><p>Corpora digitais, ferramentas de busca, anotação linguística e aplicações computacionais para línguas indígenas.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETOS ============ -->
+<section class="section" id="projetos">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div><span class="eyebrow">03 · Projetos</span><h2>Projetos em destaque.</h2></div>
+      <p class="intro">Iniciativas de pesquisa e infraestrutura digital vinculadas ao trabalho do laboratório.</p>
+    </div>
+    <div class="projects">
+      <a class="project reveal" href="projetos/corbo.html">
+        <div class="top"><span class="num">PROJETO 001 · BORORO</span><span class="chip">v0.10.0 · publicado</span></div>
+        <h3>CorBo</h3>
+        <p class="sub">Corpus da Língua Bororo</p>
+        <p>Corpus anotado em CoNLL-U (Universal Dependencies), com traduções, tokenizador, léxico e site de consulta com concordância, busca por morfema e árvores sintáticas.</p>
+        <div class="mini"><div><b>12.020</b><span>unidades</span></div><div><b>79.521</b><span>tokens</span></div><div><b>1.900</b><span>sentenças gold</span></div></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="project xav reveal" href="projetos/xavcor.html">
+        <div class="top"><span class="num">PROJETO 002 · XAVANTE</span><span class="chip dev">em desenvolvimento</span></div>
+        <h3>XavCor</h3>
+        <p class="sub">Corpus Xavante</p>
+        <p>Organização e disponibilização de materiais textuais em xavante para documentação, pesquisa e futuras anotações linguísticas.</p>
+        <div class="mini"><div><b>Textos</b><span>coleções</span></div><div><b>Paralelos</b><span>traduções</span></div><div><b>Anotação</b><span>em preparação</span></div></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPE ============ -->
+<section class="section tint" id="equipe">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div><span class="eyebrow">04 · Equipe, membros e colaboradores</span><h2>As pessoas do LALIET.</h2></div>
+      <p class="intro">Pesquisadores, membros e colaboradores que constroem o laboratório — dentro e fora da UNIFACC Mato Grosso.</p>
+    </div>
+    <div id="people-root" aria-live="polite"><p class="intro">Carregando perfis…</p></div>
+    <div class="join reveal">
+      <div>
+        <h3>Quer colaborar com o LALIET?</h3>
+        <p>O laboratório está aberto a estudantes, pesquisadores, instituições e comunidades interessadas em línguas indígenas, educação e tecnologia. Fale com a coordenação para conhecer as possibilidades de participação.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="sobre.html#participar">Como participar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICAÇÕES ============ -->
+<section class="section" id="publicacoes">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div><span class="eyebrow">05 · Produção científica</span><h2>Publicações selecionadas.</h2></div>
+      <p class="intro">Corpora, artigos e capítulos que resultam do trabalho do laboratório.</p>
+    </div>
+
+    <article class="featured reveal" aria-labelledby="corbo-pub">
+      <div class="main">
+        <span class="chip">Conjunto de dados · 22/11/2026</span>
+        <h3 id="corbo-pub">CorBo v0.10.0 — Corpus da Língua Bororo</h3>
+        <p>Corpus anotado da língua bororo (Boe Ero; ISO 639-3 <code>bor</code>) em CoNLL-U, com traduções em português, tokenizador, léxico e site de consulta. Esta versão traz validação automática do CoNLL-U, separação entre camadas gold e silver, decisões de anotação e ortografia documentadas, tokenizador v5, painel lexical, versão em inglês e página de downloads.</p>
+        <div class="cite">
+          <div class="row"><small>Como citar</small><button class="copy" type="button" data-copy="cite-corbo">Copiar</button></div>
+          <div id="cite-corbo">GERARDI, Fabrício Ferraz. <em>CorBo: Corpus da Língua Bororo</em>. Versão 0.10.0. 2026. DOI: 10.5281/zenodo.12110451.</div>
+        </div>
+        <div class="actions" style="margin-top:24px">
+          <a class="btn navy sm" href="https://doi.org/10.5281/zenodo.12110451" target="_blank" rel="noopener noreferrer">DOI · Zenodo ↗</a>
+          <a class="btn line sm" href="https://languagestructure.github.io/Bororo-Corpus/" target="_blank" rel="noopener noreferrer">Site do corpus ↗</a>
+          <a class="btn line sm" href="https://github.com/LanguageStructure/Bororo-Corpus/blob/main/docs/RELEASE_NOTES_v0.10.0.md" target="_blank" rel="noopener noreferrer">Notas da versão ↗</a>
+        </div>
+      </div>
+      <div class="side">
+        <div class="kv">
+          <div><b>12.020</b><span>unidades no CoNLL-U</span></div>
+          <div><b>79.521</b><span>tokens em 11.760 sentenças</span></div>
+          <div><b>1.900</b><span>sentenças gold</span></div>
+          <div><b>8.980</b><span>sentenças silver</span></div>
+        </div>
+        <p style="margin:0;font-size:.88rem;line-height:1.6;color:#d4f3e6">Licença CC BY 4.0. O DOI acima reúne todas as versões e resolve para a mais recente. Versão anterior: v0.9.0, <a href="https://doi.org/10.5281/zenodo.23441622" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">10.5281/zenodo.23441622</a>.</p>
+      </div>
+    </article>
+
+    <div class="pubs">
+      <div class="pub reveal"><span class="yr">2026</span><div><span class="type">Anais</span><strong>Publicação nos anais da IJCAI 2026</strong><em>Contribuição relacionada à revitalização de línguas indígenas e inteligência artificial.</em></div><a class="textlink" href="https://www.ijcai.org/proceedings/2026/824" target="_blank" rel="noopener noreferrer">Ver publicação ↗</a></div>
+      <div class="pub reveal"><span class="yr">2026</span><div><span class="type">Capítulo de livro</span><strong>Capítulo publicado pela Springer</strong><em>Referência bibliográfica completa a incorporar.</em></div><a class="textlink" href="https://link.springer.com/chapter/10.1007/978-3-032-39904-5_23#citeas" target="_blank" rel="noopener noreferrer">Ver capítulo ↗</a></div>
+      <div class="pub reveal"><span class="yr">2026</span><div><span class="type">Conjunto de dados</span><strong>CorBo v0.9.0 — Corpus da Língua Bororo</strong><em>Versão anterior do corpus, arquivada no Zenodo (17/10/2026).</em></div><a class="textlink" href="https://doi.org/10.5281/zenodo.23441622" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMAGENS ============ -->
+<section class="section tint" id="imagens">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div><span class="eyebrow">06 · Acervo visual</span><h2>Imagens &amp; contextos.</h2></div>
+      <p class="intro">Registros de pesquisa, atividades, materiais e eventos. Cada imagem é publicada com descrição, créditos e autorização de uso.</p>
+    </div>
+    <div id="gallery-list" class="gallery" aria-live="polite"><p class="gallery-empty">O acervo fotográfico será disponibilizado em breve.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <div class="wordmark">LALIET<i>.</i></div>
+        <p>Laboratório de Línguas Indígenas, Educação e Tecnologia<br>Projeto de pesquisa da UNIFACC Mato Grosso</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="sobre.html">Sobre o laboratório</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#equipe">Equipe e colaboradores</a></li><li><a href="#publicacoes">Publicações</a></li></ul>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <ul><li><a href="https://languagestructure.github.io/Bororo-Corpus/" target="_blank" rel="noopener noreferrer">CorBo — site do corpus ↗</a></li><li><a href="https://github.com/LanguageStructure/Corpus_Xavante" target="_blank" rel="noopener noreferrer">XavCor — repositório ↗</a></li><li><a href="https://github.com/LanguageStructure/LALIET" target="_blank" rel="noopener noreferrer">Código deste site ↗</a></li><li><a href="https://unifacc.com.br/" target="_blank" rel="noopener noreferrer">UNIFACC-MT ↗</a></li></ul>
+      </div>
+    </div>
+    <div class="footbar"><span>© <span id="year">2026</span> LALIET · UNIFACC Mato Grosso</span><span>Direitos de terceiros permanecem com seus titulares.</span></div>
+  </div>
+</footer>
+</body>
+</html>

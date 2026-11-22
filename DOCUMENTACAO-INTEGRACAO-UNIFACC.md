@@ -57,19 +57,19 @@ Uma integração visual mais profunda ao CMS (por exemplo, converter o conteúdo
 | `sobre.html` | Apresentação institucional do laboratório. |
 | `projetos/corbo.html` | Página do CorBo — Corpus Bororo. |
 | `projetos/xavcor.html` | Página do XavCor — Corpus Xavante. |
-| `assets/project.css` | Estilos compartilhados das páginas internas. |
-| `assets/gallery.css` | Estilos da galeria de imagens. |
+| `assets/site.css` | Estilos compartilhados de todas as páginas (inclui a galeria). |
+| `assets/site.js` | Menu móvel, cabeçalho, animações e botão de copiar citação. |
 | `assets/gallery.js` | Carregamento e visualização ampliada de imagens. |
 | `assets/people.js` | Carregamento dos perfis da equipe. |
 | `data/galeria.json` | Metadados das fotografias e autorizações. |
 | `data/pessoas.json` | Pesquisadores e colaboradores. |
-| `design/original-2026-10-09/` | Cópia de segurança da identidade visual anterior. |
+| `design/original-2026-10-09/`, `design/anterior-2026-11-22/` | Cópias de segurança das versões visuais anteriores. |
 
-A página inicial contém parte dos estilos diretamente no próprio HTML. A identidade visual atual usa **azul, amarelo e branco**. Não há logotipo gráfico; a marca do laboratório é tipográfica.
+Desde 22/11/2026 todos os estilos estão em `assets/site.css`. A identidade visual usa **azul, laranja, verde e branco**. Não há logotipo gráfico; a marca do laboratório é tipográfica.
 
 ## 5. Manutenção de conteúdo
 
-- **Pessoas:** editar `data/pessoas.json`; campos utilizados incluem `nome`, `funcao`, `biografia`, `foto` e, opcionalmente, `pagina`. Os colaboradores ficam em `colaboradores`.
+- **Pessoas:** editar `data/pessoas.json`; grupos `pessoas` (coordenação e pesquisadores), `membros` e `colaboradores`; campos `nome`, `funcao`, `instituicao`, `biografia`, `foto` e, opcionalmente, `lattes`, `orcid` e `pagina`.
 - **Galeria:** editar `data/galeria.json` e adicionar os arquivos de imagem referenciados. A galeria somente exibe registros com `autorizacao_confirmada: true` e os campos obrigatórios preenchidos: `arquivo`, `titulo`, `descricao`, `texto_alternativo` e `creditos`.
 - **Projetos e textos institucionais:** editar os respectivos arquivos HTML.
 - **Publicações:** referências e links podem ser atualizados no HTML; alguns metadados ainda serão completados.
