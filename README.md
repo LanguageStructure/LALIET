@@ -11,9 +11,9 @@ Projeto de pesquisa da **UNIFACC Mato Grosso**.
 
 O site está em `index.html` e funciona sem dependências externas.
 
-Publicação prevista pelo GitHub Pages: https://languagestructure.github.io/LALIET/
+**Endereço oficial:** https://unifacc.com.br/laliet/ (hospedado no servidor da UNIFACC-MT).
 
-Para publicar: **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save**.
+Este repositório é a fonte do código; o GitHub Pages não é usado. Para atualizar o site, copie para `/laliet/` no servidor da UNIFACC todos os arquivos públicos, preservando as pastas: `index.html`, `sobre.html`, `projetos/`, `assets/` e `data/`. As pastas `design/` e os arquivos `.md` não precisam ir para o servidor.
 
 ## Projetos
 

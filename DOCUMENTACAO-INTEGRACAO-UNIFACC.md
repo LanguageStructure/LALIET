@@ -9,7 +9,7 @@
 
 O LALIET é um **microsite institucional de pesquisa**, já desenvolvido e publicado de maneira independente. **Não é um sistema web, plugin, aplicação PHP, banco de dados, loja virtual nem serviço com login.** É um site estático responsivo, com páginas HTML, estilos CSS, JavaScript no navegador e arquivos JSON de conteúdo.
 
-**Endereço publicado:** https://languagestructure.github.io/LALIET/  
+**Endereço publicado:** https://unifacc.com.br/laliet/ (hospedagem própria da UNIFACC-MT, conforme a Opção B)  
 **Código-fonte:** https://github.com/LanguageStructure/LALIET
 
 **Pedido de integração recomendado:** criar uma entrada no site da faculdade (menu de Pesquisa / Laboratórios / Projetos, conforme a organização institucional), com nome **LALIET — Laboratório de Línguas Indígenas, Educação e Tecnologia**, breve descrição e um **link externo** para o microsite existente. Esta opção preserva o layout e evita alterações na infraestrutura institucional.
@@ -45,7 +45,7 @@ Uma integração visual mais profunda ao CMS (por exemplo, converter o conteúdo
 - **Tipo:** site estático multipágina, responsivo.
 - **Frontend:** HTML5, CSS3 e JavaScript nativo.
 - **Dados editáveis:** JSON, carregado no navegador por `fetch()`.
-- **Hospedagem atual:** GitHub Pages, branch `main`, diretório `/(root)`.
+- **Hospedagem atual:** servidor da UNIFACC-MT, subdiretório `/laliet/`. O GitHub Pages não é usado; o repositório é a fonte do código.
 - **Backend / banco de dados / autenticação:** inexistentes.
 - **Integrações externas:** links para repositórios e plataformas de pesquisa; não há API institucional obrigatória.
 
